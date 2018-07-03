@@ -8,9 +8,14 @@
 git clone --recurse-submodules https://github.com/Acquati/abenepi2
 ```
 
-2. **Criando o .env do Laravel**
+2. **Criando o arquivo .env do Laravel e do Laradock**
 
-- **Áreas que precisam ser configuradas:**
+```
+cp .env.example .env
+cp laradock/env-example laradock/.env
+```
+
+- **Áreas que precisam ser configuradas no .env do Laravel:**
 ```
 APP_URL=http://localhost:8080
 ```
@@ -23,31 +28,28 @@ DB_USERNAME=default
 DB_PASSWORD=secret
 ```
 
-3. **Criando o .env do Laradock**
-
-- **Áreas que precisam ser configuradas:**
+- **Áreas que precisam ser configuradas no .env do Laradock:**
 ```
-# Data Path
-Choose storage path on your machine. For all storage systems.
-DATA_SAVE_PATH=~/.laradock/abenepi2
+# Choose storage path on your machine. For all storage systems
+DATA_PATH_HOST=~/.laradock/abenepi2
 ```
 ```
-# PHP_FPM
+### PHP_FPM
 PHP_FPM_INSTALL_PGSQL=true
 ```
 ```
-# NGINX
+### NGINX
 NGINX_HOST_HTTP_PORT=8080
 ```
 ```
-# POSTGRES
+### POSTGRES
 POSTGRES_DB=abenepi2
 POSTGRES_USER=default
 POSTGRES_PASSWORD=secret
 POSTGRES_PORT=5432
 ```
 
-4. **Comandos pasta Laradock**
+3. **Comandos pasta Laradock - docker-compose**
 
 ```
 cd laradock
@@ -56,7 +58,7 @@ docker-compose exec --user=laradock workspace composer install
 docker-compose exec --user=laradock workspace php artisan key:generate
 ```
 
-5. **Migrate do DB**
+4. **Migrate do DB**
 
 ```
 docker-compose exec --user=laradock workspace php artisan migrate
@@ -67,20 +69,26 @@ docker-compose exec postgres createdb -U default postagem
 docker-compose exec --user=laradock workspace php artisan migrate
 ```
 
-6. **NPM**
+5. **NPM**
 
 ```
 npm install
+```
+- Caso precise dar updage nos pacotes de instalação
+```
+npm upgate -g
 ```
 - Caso de erro no pngquant
 ```
 sudo apt-get install libpng-dev
 npm install -g pngquant-bin
 ```
+
+- **Compilando os assets**
 ```
 npm run dev
 ```
-- Compilando os assets automaticamente
+- **Compilando os assets automaticamente**
 ```
 npm run watch
 ```
