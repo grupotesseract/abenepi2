@@ -49,7 +49,7 @@ POSTGRES_PASSWORD=secret
 POSTGRES_PORT=5432
 ```
 
-3. **Comandos pasta Laradock - docker-compose**
+3. **Comandos pasta Laradock | docker-compose**
 
 ```
 cd laradock
@@ -93,6 +93,9 @@ npm run dev
 ```
 npm run watch
 ```
+
+6. **Acesse no navegador:**
+http://localhost:8080/
 
 
 ## Passos da criação do projeto Laravel com Laradock
