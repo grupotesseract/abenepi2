@@ -104,16 +104,19 @@ git clone --recursive https://github.com/laravel/laravel.git
 cd laravel
 rm -rf .git
 cp -r ./ ~/Documents/abenepi2
+cd ..
+```
+```
 git add .
 git commit -m "Adicionando o Laravel"
 ggpush
 ```
 
-3. **Criando o read.me com passos da instalação do projeto**
+3. **Criando o read.me com os passos da instalação do projeto**
 
 ```
 git add .
-git commit -m "Criando o read.me com passos da instalação do projeto"
+git commit -m "Criando o read.me com os passos da instalação do projeto"
 ggpush
 ```
 
