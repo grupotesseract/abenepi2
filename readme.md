@@ -77,6 +77,7 @@ npm install
 - Caso precise dar updage nos pacotes de instalação
 ```
 npm upgate -g
+npm install
 ```
 - Caso de erro no pngquant
 ```
