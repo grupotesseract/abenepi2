@@ -100,7 +100,7 @@ cd abenepi2
 
 ```
 cd ..
-git clone https://github.com/laravel/laravel.git
+git clone --recursive https://github.com/laravel/laravel.git
 cd laravel
 rm -rf .git
 cp -r ./ ~/Documents/abenepi2
