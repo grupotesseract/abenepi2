@@ -1,4 +1,4 @@
-# Site do Simpósio Transtornos Neuropsiquiátricos da Infância e Adolescência - ABENEPI
+# Site do XI Congresso Paulista da ABENEPI
 
 ## Instalando o Projeto
 
