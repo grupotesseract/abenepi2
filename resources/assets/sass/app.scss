@@ -2,13 +2,31 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
-// Variables
-@import "variables";
-
+// Bootstrap Reboot
+@import '~bootstrap/scss/bootstrap-reboot';
+// Bootstrap Grid
+@import '~bootstrap/scss/bootstrap-grid';
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
+// Global
+	// Variables
+	@import 'global/variables';
+	// Mixins
+	@import 'global/mixins';
+
+// Admin
+	// Layout
+	@import 'admin/layout';
+	// Fonts
+	@import 'admin/fonts';
+
+// Layout
+	// Fonts -> Tipografia e uso das fontes.
+	@import 'layout/fonts';
+	// Layout -> Regras gerais de layout, como modificar um .container para todo o projeto.
+	@import 'layout/layout';
+
+// Pages
+	// Home -> Regras específicas da Home.
+	@import 'pages/home';
