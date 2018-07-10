@@ -5,8 +5,14 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
-
+//require('./bootstrap');
+/*
+// Material Design Bootstrap
+import 'mdbootstrap/js/jquery-3.3.1.min.js';
+import 'mdbootstrap/js/bootstrap.min.js';
+import 'mdbootstrap/js/popper.min.js';
+import 'mdbootstrap/js/mdb.min.js';
+*/
 /*
 window.Vue = require('vue');
 */
