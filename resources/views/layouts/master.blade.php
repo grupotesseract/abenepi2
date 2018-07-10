@@ -3,6 +3,8 @@
 	@include('layouts.head')
 
 	<body>
+		@include('layouts.nav')
+
 		@yield('content')
 
 		@include('layouts.scripts')

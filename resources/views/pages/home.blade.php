@@ -2,8 +2,9 @@
 
 @section('content')
 
+<header></header>
+
 <div class="container">
-	<i class="fab fa-accessible-icon"></i>
 </div>
 
 @endsection

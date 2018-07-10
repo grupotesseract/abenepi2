@@ -1,1 +1,24 @@
 // Layout -> Regras gerais de layout, como modificar um .container para todo o projeto.
+
+// Navbar
+.nav-link {
+	font-weight: 600;
+}
+
+// Header
+header {
+	background-image: url("/images/bg-desktop.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 850px;
+
+  @media (min-width: 1440px) {
+  	height: 1000px;
+  }
+
+  @include media-breakpoint-down(md) {
+	  background-image: url("/images/bg-mobile.jpeg");
+	  height: 400px;
+	}
+}

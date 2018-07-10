@@ -1,24 +1,40 @@
+// Global
+	// Variables
+	@import 'global/variables';
+	// Mixins
+	@import 'global/mixins';
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// Layout
+	// Fonts -> Tipografia e uso das fontes.
+	@import 'layout/fonts';
 
-// Bootstrap Reboot
-@import '~bootstrap/scss/bootstrap-reboot';
-// Bootstrap Grid
-@import '~bootstrap/scss/bootstrap-grid';
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 // Font Awesome
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~@fortawesome/fontawesome-free/scss/fa-solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/fa-brands.scss";
-@import "~@fortawesome/fontawesome-free/scss/fa-brands.scss";
+@import "~@fortawesome/fontawesome-free/scss/fa-regular.scss";
 
-// Global
-	// Variables
-	@import 'global/variables';
-	// Mixins
-	@import 'global/mixins';
+@fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+
+.user {
+  @include fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}
+
+.twitter {
+  @include fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-twitter);
+  }
+}
 
 // Admin
 	// Layout
@@ -27,8 +43,6 @@
 	@import 'admin/fonts';
 
 // Layout
-	// Fonts -> Tipografia e uso das fontes.
-	@import 'layout/fonts';
 	// Layout -> Regras gerais de layout, como modificar um .container para todo o projeto.
 	@import 'layout/layout';
 

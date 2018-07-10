@@ -1,30 +1,8 @@
-// Font Awesome
-@fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
-
-.user {
-  @include fa-icon;
-  @extend .fas;
-
-  &:before {
-    content: fa-content($fa-var-user);
-  }
-}
-
-.twitter {
-  @include fa-icon;
-  @extend .fab;
-
-  &:before {
-    content: fa-content($fa-var-twitter);
-  }
-}
-
 // Variables
-
 // Body
-//$body-bg: #f5f8fa;
+body {
+  padding-top: 60px;
+}
 
-// Typography
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+// Colors
+$primary: rgba(#990033, .9);
