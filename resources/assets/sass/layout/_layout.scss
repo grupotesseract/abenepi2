@@ -7,18 +7,87 @@
 
 // Header
 header {
-	background-image: url("/images/bg-desktop.jpeg");
+	background-image: url("/images/bg-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 850px;
 
-  @media (min-width: 1440px) {
+  padding-top: 61px;
+
+  .logo-header {
+    display: flex;
+
+    img {
+      width: 100%;
+      margin: auto;
+      @include media-breakpoint-down(md)  {
+        display: none;
+      }
+    }
+  }
+
+  .box-header {
+    color: white;
+    p {
+      font-size: 1.5rem;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+
+    @include media-breakpoint-down(md)  {
+      width: 100%;      
+      h1 {
+        display: none;
+      }
+    }
+
+    div {
+      width: 80%;
+      background-color: $primary;
+      padding: 3rem 0;
+      margin: 5rem auto;
+      img {
+        display: none;
+      }      
+      @include media-breakpoint-down(md)  {
+        img {
+          display: block;
+          width: 100%;
+          padding: 0 2rem;
+        }
+        margin: 3rem 0;
+      }
+      text-align: center;
+
+      @include media-breakpoint-down(md)  {
+        width: 100%;
+        p {
+          &:nth-child(2) {
+            display: none;
+          }
+
+          &:last-child {
+            font-size: 1.3rem;
+          }          
+        }
+      }
+
+      .linha-header {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+        border-top: 1px solid white;
+      }
+    }
+  }
+
+  /*@media (min-width: 1440px) {
   	height: 1000px;
   }
 
   @include media-breakpoint-down(md) {
 	  background-image: url("/images/bg-mobile.jpeg");
 	  height: 400px;
-	}
+	}*/
 }
