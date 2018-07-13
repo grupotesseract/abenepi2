@@ -6,6 +6,7 @@
 
 ```
 git clone --recurse-submodules https://github.com/Acquati/abenepi2
+cd abenepi2
 ```
 
 2. **Criando o arquivo .env do Laravel e do Laradock**
@@ -76,7 +77,7 @@ npm install
 ```
 - Caso precise dar updage nos pacotes de instalação
 ```
-npm upgate -g
+npm update -g
 npm install
 ```
 - Caso de erro no pngquant
