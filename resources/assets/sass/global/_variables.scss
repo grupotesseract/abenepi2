@@ -1,9 +1,8 @@
 // Variables
-
 // Body
-//$body-bg: #f5f8fa;
+body {
+  padding-top: 60px;
+}
 
-// Typography
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+// Colors
+$primary: rgba(#990033, .9);
