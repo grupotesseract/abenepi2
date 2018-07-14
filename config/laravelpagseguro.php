@@ -2,14 +2,14 @@
 
 return [
     /* DEFINE SE SERÁ UTILIZADO O AMBIENTE DE TESTES */
-    'use-sandbox' => true,
+    'use-sandbox' => false,
 
     /*
      * Coloque abaixo as informações do seu cadastro no PagSeguro
      */
     'credentials' => [//INFORME AS CREDENCIAIS PADRÕES DE SUA LOJA, MAS PORDERÁ SER ALTERADA EM RUNTIME
         'email' => env('PAGSEGURO_EMAIL'),
-        'token' => env('PAGSEGURO_TOKEN_SANDBOX'),
+        'token' => env('PAGSEGURO_TOKEN'),
     ],
 
     /*
@@ -24,12 +24,12 @@ return [
      */
     'routes' => [
         'redirect' => [
-            'route-name' => 'pagseguro.redirect', // Criar uma rota com este nome
+            'fixed' => env('APP_URL'), // Criar uma rota com este nome
         ],
         'notification' => [
             'callback' => null, // Callable callback to Notification function (notificationInfo) : void {}
             'credential' => 'default', // Callable resolve credential function (notificationCode) : Credentials {}
-            'route-name' => 'pagseguro.notification', // Criar uma rota com este nome
+            'fixed' => env('APP_URL'), // Criar uma rota com este nome
         ],
     ],
 
