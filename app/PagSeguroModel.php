@@ -9,7 +9,7 @@ class PagSeguroModel extends Model
 {
     public static function confirmaPagamento($inscrito)
     {
-        $data = [
+        /*$data = [
             'items' => [
                 [
                     'id' => $inscrito->id,
@@ -29,6 +29,8 @@ class PagSeguroModel extends Model
                     'state' => $inscrito->estado,
                     'country' => 'BRA',
                 ],
+                'type' => 2,
+                'cost' => 0,
             ],
             'sender' => [
                 'email' => $inscrito->email,
@@ -41,6 +43,42 @@ class PagSeguroModel extends Model
                 ],
                 'phone' => $inscrito->telefone,
                 'bornDate' => $inscrito->nascimento,
+            ]
+        ];*/
+
+        $data = [
+            'items' => [
+                [
+                    'id' => '18',
+                    'description' => 'Item Um',
+                    'quantity' => '1',
+                    'amount' => '1.15',
+                ],
+            ],
+            'shipping' => [
+                'address' => [
+                    'postalCode' => '06410030',
+                    'street' => 'Rua Leonardo Arruda',
+                    'number' => '12',
+                    'district' => 'Jardim dos Camargos',
+                    'city' => 'Barueri',
+                    'state' => 'SP',
+                    'country' => 'BRA',
+                ],
+                'type' => 2,
+                'cost' => 0,
+            ],
+            'sender' => [
+                'email' => 'sender@gmail.com',
+                'name' => 'Isaque de Souza Barbosa',
+                'documents' => [
+                    [
+                        'number' => '01234567890',
+                        'type' => 'CPF'
+                    ]
+                ],
+                'phone' => '11985445522',
+                'bornDate' => '1988-03-21',
             ]
         ];
 
