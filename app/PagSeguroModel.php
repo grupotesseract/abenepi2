@@ -7,67 +7,47 @@ use PagSeguro;
 
 class PagSeguroModel extends Model
 {
-    public static function confirmaPagamento()
+    public static function confirmaPagamento($inscrito)
     {
         $data = [
             'items' => [
                 [
-                    'id' => '18',
-                    'description' => 'Item Um',
+                    'id' => $inscrito->id,
+                    'description' => $inscrito->descricao,
                     'quantity' => '1',
-                    'amount' => '1.15',
-                    'weight' => '45',
-                    'shippingCost' => '3.5',
-                    'width' => '50',
-                    'height' => '45',
-                    'length' => '60',
+                    'amount' => $inscrito->valor
                 ],
-                [
-                    'id' => '19',
-                    'description' => 'Item Dois',
-                    'quantity' => '1',
-                    'amount' => '3.15',
-                    'weight' => '50',
-                    'shippingCost' => '8.5',
-                    'width' => '40',
-                    'height' => '50',
-                    'length' => '80',
-                ],
+
             ],
             'shipping' => [
                 'address' => [
-                    'postalCode' => '06410030',
-                    'street' => 'Rua Leonardo Arruda',
-                    'number' => '12',
-                    'district' => 'Jardim dos Camargos',
-                    'city' => 'Barueri',
-                    'state' => 'SP',
+                    'postalCode' => $inscrito->cep,
+                    'street' => $inscrito->endereco,
+                    'number' => $inscrito->numero,
+                    'district' => $inscrito->bairro,
+                    'city' => $inscrito->cidade,
+                    'state' => $inscrito->estado,
                     'country' => 'BRA',
                 ],
-                'type' => 2,
-                'cost' => 30.4,
             ],
             'sender' => [
-                'email' => 'sender@gmail.com',
-                'name' => 'Isaque de Souza Barbosa',
+                'email' => $inscrito->email,
+                'name' => $inscrito->nome,
                 'documents' => [
                     [
-                        'number' => '01234567890',
+                        'number' => $inscrito->cpf,
                         'type' => 'CPF'
                     ]
                 ],
-                'phone' => '11985445522',
-                'bornDate' => '1988-03-21',
+                'phone' => $inscrito->telefone,
+                'bornDate' => $inscrito->nascimento,
             ]
         ];
 
         $checkout = PagSeguro::checkout()->createFromArray($data);
         $credentials = PagSeguro::credentials()->get();
         $information = $checkout->send($credentials); // Retorna um objeto de laravel\pagseguro\Checkout\Information\Information
-        if ($information) {
-            print_r($information->getCode());
-            print_r($information->getDate());
-            print_r($information->getLink());
-        }
+
+        return $information->getLink();
     }
 }
