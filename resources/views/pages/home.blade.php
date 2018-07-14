@@ -6,6 +6,8 @@
 
 @include('pages.home.programacao')
 
+@include('pages.home.formulario')
+
 @include('pages.home.apoio')
 
 @endsection

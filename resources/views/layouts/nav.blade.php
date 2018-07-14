@@ -7,19 +7,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#">Home</a>
+          <a class="nav-link smooth-scroll" href="#home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link smooth-scroll" href="#programacao">Programação</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#">Infraestrutura</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#">Inscrições</a>
+          <a class="nav-link smooth-scroll" href="#formulario">Inscrições</a>
         </li>
         <li class="nav-item">
           <a class="nav-link smooth-scroll" href="#">Certificados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link smooth-scroll" href="#apoio">Apoio</a>
         </li>
       </ul>
     </div>
