@@ -10,13 +10,13 @@
 
 		<div class="col-12 col-lg-4">
 			<a href="http://ciapre.org.br/" target="_blank">
-				<img src="images/ciapre.jpg">
+				<img src="images/ciapre.png">
 			</a>
 		</div>
 
 		<div class="col-12 col-lg-4">
 			<a href="https://www.shire.com.br/" target="_blank">
-				<img src="images/shire.jpg">
+				<img src="images/shire.png">
 			</a>
 		</div>
 
