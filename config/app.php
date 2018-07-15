@@ -168,7 +168,9 @@ return [
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
         \InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
-        laravel\pagseguro\Platform\Laravel5\ServiceProvider::class
+        laravel\pagseguro\Platform\Laravel5\ServiceProvider::class,
+        Yajra\DataTables\DataTablesServiceProvider::class,
+        Yajra\DataTables\ButtonsServiceProvider::class,
     ],
 
     /*
@@ -222,6 +224,7 @@ return [
         'Html'      => Collective\Html\HtmlFacade::class,
         'Flash'     => Laracasts\Flash\Flash::class,
         'PagSeguro' => laravel\pagseguro\Platform\Laravel5\PagSeguro::class
+
     ],
 
 ];

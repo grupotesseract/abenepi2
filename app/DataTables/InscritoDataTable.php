@@ -64,16 +64,7 @@ class InscritoDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            'cpf',
             'nome',
-            'profissao',
-            'endereco',
-            'bairro',
-            'numero',
-            'complemento',
-            'cep',
-            'email',
-            'senha',
             'compareceu',
             'pagou',
             'cidade',
