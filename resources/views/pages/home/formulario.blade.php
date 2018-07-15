@@ -10,7 +10,7 @@
 				<li>Estudantes (Graduação e Pós-Graduação): R$250,00</li>
 				<li>Profissionais e outros: R$300,00</li>
 				<li>Profissionais sócios (ABENEPI, ABPp): R$250,00</li>
-			</ul>			
+			</ul>
 		</div>
 
 		<div class="col-12 col-lg-6">
@@ -19,7 +19,7 @@
 				<li>Estudantes (Graduação e Pós-Graduação): R$300,00</li>
 				<li>Profissionais e outros: R$350,00</li>
 				<li>Profissionais sócios (ABENEPI, ABPp): R$300,00</li>
-			</ul>			
+			</ul>
 		</div>
 
 		<div class="col-12 col-lg-6">
@@ -28,7 +28,7 @@
 				<li>Estudantes (Graduação e Pós-Graduação): R$350,00</li>
 				<li>Profissionais e outros: R$400,00</li>
 				<li>Profissionais sócios (ABENEPI, ABPp): R$350,00</li>
-			</ul>			
+			</ul>
 		</div>
 
 		<div class="col-12 col-lg-6">
@@ -37,7 +37,7 @@
 				<li>Estudantes (Graduação e Pós-Graduação): R$210,00</li>
 				<li>Profissionais: R$245,00</li>
 				<li>Profissionais sócios (ABENEPI, ABPp): R$210,00</li>
-			</ul>			
+			</ul>
 		</div>
 	</div>
 
@@ -47,9 +47,8 @@
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 		<input type="hidden" name="compareceu" value="false">
 		<input type="hidden" name="pagou" value="false">
-		<input type="hidden" name="evento_id" value="1">
 
-		@if ($errors->any())		
+		@if ($errors->any())
 			<div id="erros" class="alert alert-danger" role="alert">
 			  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
 			  <ul>
@@ -58,13 +57,13 @@
 	        @endforeach
 		    </ul>
 			</div>
-		@endif	
-		
+		@endif
+
 		<div class="alert alert-warning center-block text-center" role="alert">
-		  <i class="glyphicon glyphicon-exclamation-sign"></i> 
-		  <span aria-hidden="true">Todos os campos são obrigatórios (exceto Complemento)</span>		  
-		</div>	
-		    
+		  <i class="glyphicon glyphicon-exclamation-sign"></i>
+		  <span aria-hidden="true">Todos os campos são obrigatórios (exceto Complemento)</span>
+		</div>
+
 		<div class="form-group">
 			<div class="row">
 				<div class="col-12 col-lg-3 mb-2">
@@ -73,10 +72,10 @@
 				</div>
 
 				<div class="col-12 col-lg-3 mb-2">
-					<label id="label_form" for="cpf" class="control-label">CPF</label>	
+					<label id="label_form" for="cpf" class="control-label">CPF</label>
 					<input type="text" class="form-control" placeholder="99999999999" maxlength="11" name="cpf" value="{{ old('cpf') }}">
 				</div>
-		  		
+
 		  	<div class="col-12 col-lg-3 mb-2">
 					<label id="label_form" for="datanasc" class="control-label">Data de Nascimento</label>
 					<input type="text" class="form-control" placeholder="dd/mm/yyyy" name="datanasc" value="{{ old('datanasc') }}">
@@ -89,17 +88,17 @@
 
 				<div class="col-12 mb-2">
 					<label id="label_form" for="endereco" class="control-label">Endereço</label>
-					<input type="text" class="form-control" name="endereco" value="{{ old('endereco') }}">				
+					<input type="text" class="form-control" name="endereco" value="{{ old('endereco') }}">
 				</div>
 
 				<div class="col-12 col-lg-3 mb-2">
 					<label id="label_form" for="bairro" class="control-label">Bairro</label>
-					<input type="text" class="form-control" name="bairro" value="{{ old('bairro') }}">		  	
+					<input type="text" class="form-control" name="bairro" value="{{ old('bairro') }}">
 				</div>
 
 				<div class="col-12 col-lg-3 mb-2">
 					<label id="label_form" for="numero" class="control-label">Número</label>
-					<input type="text" class="form-control" name="numero" value="{{ old('numero') }}">		  	
+					<input type="text" class="form-control" name="numero" value="{{ old('numero') }}">
 				</div>
 
 				<div class="col-12 col-lg-3 mb-2">
@@ -118,7 +117,7 @@
 						{{--@foreach ($estados as $estado)
 							<option value="{{$estado->id}}" {{ (old("state_id") == $estado->id ? "selected":"") }}>{{$estado->name}}</option>
 						@endforeach--}}
-					</select>			 
+					</select>
 				</div>
 
 				<div class="col-12 col-lg-6 mb-2">
@@ -128,12 +127,12 @@
 							<option value="{{$cidade->id}}" {{ (old("citie_id") == $cidade->id ? "selected":"") }}>{{$cidade->name}}</option>
 						@endforeach--}}
 					</select>
-				</div>	 
-				
+				</div>
+
 				<div class="col-12 mb-2">
 					<label id="label_form" for="telefone" class="control-label">Telefone</label>
 				  <input type="text" class="form-control" maxlength="14" placeholder="(14)91234-5678" name="telefone" value="{{ old('telefone') }}">
-				</div>	
+				</div>
 
 				<div class="col-12 col-lg-6 mb-2">
 					<label id="label_form" for="inputEmail3" class="control-label">Email</label>

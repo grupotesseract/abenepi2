@@ -26,3 +26,5 @@ Route::resource('inscritos', 'InscritoController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::post('inscricao', 'InscritoController@inscricao');

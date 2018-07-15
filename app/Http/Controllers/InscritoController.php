@@ -11,6 +11,8 @@ use Flash;
 use App\Http\Controllers\AppBaseController;
 use Response;
 
+use \App\Models\PagSeguroModel as PagSeguroModel;
+
 class InscritoController extends AppBaseController
 {
     /** @var  InscritoRepository */
@@ -147,5 +149,25 @@ class InscritoController extends AppBaseController
         Flash::success('Inscrito deleted successfully.');
 
         return redirect(route('inscritos.index'));
+    }
+
+    /**
+     * Salva um Inscrito e Redireciona para PagSeguro
+     *
+     * @param CreateInscritoRequest $request
+     *
+     * @return Response
+     */
+    public function inscricao(CreateInscritoRequest $request)
+    {
+        $input = $request->all();
+
+        $inscrito = $this->inscritoRepository->create($input);
+
+        dd($inscrito);
+
+        $pagSeguro = PagSeguroModel::confirmaPagamento($inscrito);
+
+        return redirect($pagSeguro);
     }
 }
