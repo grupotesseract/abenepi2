@@ -68,65 +68,57 @@
 			<div class="row">
 				<div class="col-12 col-lg-3 mb-2">
 					<label id="label_form" for="nome" class="control-label">Nome</label>
-				  <input type="text" class="form-control" name="nome" value="{{ old('nome')}}">
+				  <input type="text" class="form-control" name="nome" value="{{ old('nome')}}" required="required">
 				</div>
 
 				<div class="col-12 col-lg-3 mb-2">
 					<label id="label_form" for="cpf" class="control-label">CPF</label>
-					<input type="text" class="form-control" placeholder="99999999999" maxlength="11" name="cpf" value="{{ old('cpf') }}">
+					<input type="text" class="form-control" placeholder="99999999999" maxlength="11" name="cpf" value="{{ old('cpf') }}" required="required">
 				</div>
 
 		  	<div class="col-12 col-lg-3 mb-2">
-					<label id="label_form" for="datanasc" class="control-label">Data de Nascimento</label>
-					<input type="text" class="form-control" placeholder="dd/mm/yyyy" name="datanasc" value="{{ old('datanasc') }}">
+					<label id="label_form" for="nascimento" class="control-label">Data de Nascimento</label>
+					<input type="text" class="form-control" placeholder="dd/mm/yyyy" name="nascimento" value="{{ old('nascimento') }}" required="required">
 		  	</div>
 
 		  	<div class="col-12 col-lg-3 mb-2">
 					<label id="label_form" for="profissao" class="control-label">Profissão</label>
-					<input type="text" class="form-control" name="profissao" value="{{ old('profissao') }}">
+					<input type="text" class="form-control" name="profissao" value="{{ old('profissao') }}" required="required">
 		  	</div>
 
 				<div class="col-12 mb-2">
 					<label id="label_form" for="endereco" class="control-label">Endereço</label>
-					<input type="text" class="form-control" name="endereco" value="{{ old('endereco') }}">
+					<input type="text" class="form-control" name="endereco" value="{{ old('endereco') }}" required="required">
 				</div>
 
 				<div class="col-12 col-lg-3 mb-2">
 					<label id="label_form" for="bairro" class="control-label">Bairro</label>
-					<input type="text" class="form-control" name="bairro" value="{{ old('bairro') }}">
+					<input type="text" class="form-control" name="bairro" value="{{ old('bairro') }}" required="required">
 				</div>
 
 				<div class="col-12 col-lg-3 mb-2">
 					<label id="label_form" for="numero" class="control-label">Número</label>
-					<input type="text" class="form-control" name="numero" value="{{ old('numero') }}">
+					<input type="text" class="form-control" name="numero" value="{{ old('numero') }}" required="required">
 				</div>
 
 				<div class="col-12 col-lg-3 mb-2">
 					<label id="label_form" for="complemento" class="control-label">Complemento (opcional)</label>
-					<input type="text" class="form-control" name="complemento" value="{{ old('complemento') }}" maxlength="20">
+					<input type="text" class="form-control" name="complemento" value="{{ old('complemento') }}" maxlength="20" required="required">
 				</div>
 
 				<div class="col-12 col-lg-3 mb-2">
 					<label id="label_form" for="cep" class="control-label">CEP</label>
-					<input type="text" class="form-control" maxlength="8" placeholder="99999999" name="cep" value="{{ old('cep') }}">
+					<input type="text" class="form-control" maxlength="8" placeholder="99999999" name="cep" value="{{ old('cep') }}" required="required">
 				</div>
 
 				<div class="col-12 col-lg-6 mb-2">
 					<label id="label_form" for="estado" class="control-label">Estado</label>
-					<select class="form-control" id="state" name="state_id" value="{{ old('state_id') }}" onchange="stateonChange(this.value);">
-						{{--@foreach ($estados as $estado)
-							<option value="{{$estado->id}}" {{ (old("state_id") == $estado->id ? "selected":"") }}>{{$estado->name}}</option>
-						@endforeach--}}
-					</select>
+                    <input type="text" class="form-control" maxlength="2" placeholder="SP" name="estado" value="{{ old('estado') }}" required="required">
 				</div>
 
 				<div class="col-12 col-lg-6 mb-2">
 					<label id="label_form" for="cidade" class="control-label">Cidade</label>
-					<select class="form-control" id="city" name="citie_id" value="{{ old('citie_id') }}">
-						{{--@foreach ($cidades as $cidade)
-							<option value="{{$cidade->id}}" {{ (old("citie_id") == $cidade->id ? "selected":"") }}>{{$cidade->name}}</option>
-						@endforeach--}}
-					</select>
+					<input type="text" class="form-control" placeholder="São Carlos" name="cidade" value="{{ old('cidade') }}" required="required">
 				</div>
 
 				<div class="col-12 mb-2">

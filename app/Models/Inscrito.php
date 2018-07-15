@@ -49,7 +49,10 @@ class Inscrito extends Model
         'compareceu',
         'pagou',
         'cidade',
-        'estado'
+        'estado',
+        'valor',
+        'telefone',
+        'nascimento'
     ];
 
     /**
@@ -71,7 +74,10 @@ class Inscrito extends Model
         'compareceu' => 'boolean',
         'pagou' => 'boolean',
         'cidade' => 'string',
-        'estado' => 'string'
+        'estado' => 'string',
+        'valor' => 'float',
+        'telefone' => 'string',
+        'nascimento' => 'string'
     ];
 
     /**
@@ -90,7 +96,10 @@ class Inscrito extends Model
         'email' => 'required',
         'senha' => 'required',
         'cidade' => 'required',
-        'estado' => 'required'
+        'estado' => 'required',
+        'valor' => 'required',
+        'telefone' => 'required',
+        'nascimento' => 'required'
     ];
 
 

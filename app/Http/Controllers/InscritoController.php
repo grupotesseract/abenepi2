@@ -11,7 +11,7 @@ use Flash;
 use App\Http\Controllers\AppBaseController;
 use Response;
 
-use \App\Models\PagSeguroModel as PagSeguroModel;
+use \App\PagSeguroModel as PagSeguroModel;
 
 class InscritoController extends AppBaseController
 {
@@ -163,8 +163,6 @@ class InscritoController extends AppBaseController
         $input = $request->all();
 
         $inscrito = $this->inscritoRepository->create($input);
-
-        dd($inscrito);
 
         $pagSeguro = PagSeguroModel::confirmaPagamento($inscrito);
 

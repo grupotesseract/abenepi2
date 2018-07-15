@@ -29,6 +29,9 @@ class CreateInscritosTable extends Migration
             $table->boolean('pagou');
             $table->string('cidade');
             $table->string('estado');
+            $table->string('telefone');
+            $table->string('nascimento');
+            $table->decimal('valor',10,2);
             $table->timestamps();
             $table->softDeletes();
         });

@@ -13,7 +13,7 @@ class PagSeguroModel extends Model
             'items' => [
                 [
                     'id' => $inscrito->id,
-                    'description' => $inscrito->descricao,
+                    'description' => 'IX CONGRESSO PAULISTA DA ABENEPI',
                     'quantity' => '1',
                     'amount' => $inscrito->valor
                 ],
@@ -42,7 +42,7 @@ class PagSeguroModel extends Model
                     ]
                 ],
                 'phone' => $inscrito->telefone,
-                'bornDate' => $inscrito->nascimento,
+                'bornDate' => date("Y-m-d", strtotime($inscrito->nascimento)),
             ]
         ];
 
