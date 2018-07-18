@@ -1,5 +1,5 @@
 <div class="container apoio" id="apoio">
-	<h1 class="text-center mb-5">Apoio</h1>
+	<h1 class="text-center mb-3">Apoio</h1>
 
 	<div class="row justify-content-center mb-5">
 		<div class="col-12 col-lg-4">

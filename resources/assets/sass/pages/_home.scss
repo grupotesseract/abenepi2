@@ -189,3 +189,38 @@ header {
       transform: scale(1);
   }
 }
+
+.infraestrutura {
+  h1 {
+    color: $primary;
+  }
+
+  @include media-breakpoint-down(md) { 
+    p {
+      &:first-child {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+  }
+
+  span {
+    color: $primary;
+    font-weight: bold;
+  }
+
+  button {
+    display: block;
+    margin: 2rem auto 0;
+  }
+
+  #map {
+    height: 300px;
+    width: 100%;
+    border: 2px solid $primary;
+    border-radius: 10px;
+  }
+}
