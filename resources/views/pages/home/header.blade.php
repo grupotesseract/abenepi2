@@ -2,12 +2,12 @@
 	<div class="container">
 		<div class="row">
 	    <div class="col-12 col-lg-6 logo-header">
-	      <img src="images/logo.png">
+	      <img src="https://res.cloudinary.com/tesseract/image/upload/f_auto,q_auto/v1531876306/abenepi2/logo.png">
 	    </div>
 
 	    <div class="col-12 col-lg-6 box-header">
 	      <div>
-	      	<img src="images/logo.png">
+	      	<img src="https://res.cloudinary.com/tesseract/image/upload/f_auto,q_auto/v1531876306/abenepi2/logo.png">
 
 	      	<p class="mb-0">IX CONGRESSO PAULISTA DA</p>
 	      	<h1 class="mt-0 font-italic">ABENEPI</h1>
