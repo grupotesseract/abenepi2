@@ -15,8 +15,13 @@
         <li class="nav-item">
           <a class="nav-link smooth-scroll" href="#formulario">Inscrições</a>
         </li>
+        {{-- Descomentar quando for criado a emissçao de certificaos
         <li class="nav-item">
           <a class="nav-link smooth-scroll" href="#">Certificados</a>
+        </li>
+        --}}        
+        <li class="nav-item">
+          <a class="nav-link smooth-scroll" href="#infraestrutura">Infraestrutura</a>
         </li>
         <li class="nav-item">
           <a class="nav-link smooth-scroll" href="#apoio">Apoio</a>

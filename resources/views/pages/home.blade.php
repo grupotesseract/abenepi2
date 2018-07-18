@@ -8,6 +8,8 @@
 
 @include('pages.home.formulario')
 
+@include('pages.home.infraestrutura')
+
 @include('pages.home.apoio')
 
 @endsection

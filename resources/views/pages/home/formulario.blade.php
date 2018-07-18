@@ -43,8 +43,8 @@
 
 	<p><span>Obs:</span> O Núcleo São Carlos da Abenepi reserva-se ao direito de aceitar somente as inscrições realizadas dentro do prazo e de encerrar as inscrições assim que todas as vagas forem preenchidas.</p>
 
-	<form class="form-horizontal" action="{{url('/inscricao')}}" method="post">
-		<input type="hidden" name="_token" value="{{ csrf_token() }}">
+	<form action="{{url('/inscricao')}}" method="post">
+		@csrf
 		<input type="hidden" name="compareceu" value="false">
 		<input type="hidden" name="pagou" value="false">
 
@@ -146,7 +146,7 @@
 			  </div>
 
 			  <div class="col-12 col-lg-6 mb-2">
-			    <input type="radio" id="valor2" name="valor" value="250" @if(old('valor') == 300) checked @endif>
+			    <input type="radio" id="valor2" name="valor" value="300" @if(old('valor') == 300) checked @endif>
 			    <label for="valor2">Profissionais e outros: R$300,00</label>
 			  </div>
 
@@ -154,30 +154,60 @@
 			    <input type="radio" id="valor3" name="valor" value="250" @if(old('valor') == 250) checked @endif>
 			    <label for="valor3">Profissionais sócios (ABENEPI, ABPp): R$250,00</label>
 			  </div>
-				{{--
-				<div class="col-12 col-lg-6 mb-2">
-				  <label id="label_form">
-				  	<input type="radio" name="valor" value="250" @if(old('valor') == 250) checked @endif>
-				  	Estudantes (Graduação e Pós-Graduação): R$250,00
-				  </label>
-				</div>
-
-				<div class="col-12 col-lg-6 mb-2">
-				  <label id="label_form">
-				  	<input type="radio" name="valor" value="300" @if(old('valor') == 300) checked @endif>
-				  	Profissionais e outros: R$300,00
-				  </label>
-				</div>
-
-				<div class="col-12 col-lg-6 mb-2">
-				  <label id="label_form">
-				  	<input type="radio" name="valor" value="250" @if(old('valor') == 250) checked @endif>
-				  	Profissionais sócios (ABENEPI, ABPp): R$250,00
-				  </label>
-				</div>--}}
 
 				<div class="text-center col-12 mt-3 mb-5">
 					<button type="submit" class="btn btn-default">Inscrever-se</button>
+				</div>
+			</div>{{-- End Row --}}
+		</div>{{-- End Form-Group --}}
+	</form>
+
+	<h1 class="text-center mb-4">Gerar Nova Guia de Pagamento</h1>
+
+	<form action="{{url('')}}" method="post">
+		@csrf
+
+		@if ($errors->any())
+			<div id="erros" class="alert alert-danger" role="alert">
+			  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+			  <ul>
+	        @foreach ($errors->all() as $error)
+	        	<li>{{ $error }}</li>
+	        @endforeach
+		    </ul>
+			</div>
+		@endif
+
+		<div class="form-group">
+			<div class="row justify-content-md-center">
+				<div class="col-12 col-lg-7 mb-2">
+					<label id="label_form" for="cpf" class="control-label">Digite seu CPF abaixo pra gerar novo pagamento no PagSeguro</label>
+					<input type="text" class="form-control" placeholder="99999999999" maxlength="11" name="cpf" value="{{ old('cpf') }}" required="required">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 mt-4 mb-4">
+					<h5>Selecione uma das opções abaixo:</h5>
+				</div>
+
+				<div class="col-12 col-lg-6 mb-2">
+			    <input type="radio" id="valor4" name="valor" value="250" @if(old('valor') == 250) checked @endif>
+			    <label for="valor4">Estudantes (Graduação e Pós-Graduação): R$250,00</label>
+			  </div>
+
+			  <div class="col-12 col-lg-6 mb-2">
+			    <input type="radio" id="valor5" name="valor" value="300" @if(old('valor') == 300) checked @endif>
+			    <label for="valor5">Profissionais e outros: R$300,00</label>
+			  </div>
+
+			  <div class="col-12 col-lg-6 mb-2">
+			    <input type="radio" id="valor6" name="valor" value="250" @if(old('valor') == 250) checked @endif>
+			    <label for="valor6">Profissionais sócios (ABENEPI, ABPp): R$250,00</label>
+			  </div>
+
+				<div class="text-center col-12 mt-3 mb-5">
+					<button type="submit" class="btn btn-default">Gerar Pagamento</button>
 				</div>
 			</div>{{-- End Row --}}
 		</div>{{-- End Form-Group --}}
