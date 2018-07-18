@@ -179,29 +179,31 @@
 		@endif
 
 		<div class="form-group">
-			<div class="row">
-				<div class="col-12 col-lg-8 mb-2">
+			<div class="row justify-content-md-center">
+				<div class="col-12 col-lg-7 mb-2">
 					<label id="label_form" for="cpf" class="control-label">Digite seu CPF abaixo pra gerar novo pagamento no PagSeguro</label>
 					<input type="text" class="form-control" placeholder="99999999999" maxlength="11" name="cpf" value="{{ old('cpf') }}" required="required">
 				</div>
+			</div>
 
+			<div class="row">
 				<div class="col-12 mt-4 mb-4">
 					<h5>Selecione uma das opções abaixo:</h5>
 				</div>
 
 				<div class="col-12 col-lg-6 mb-2">
-			    <input type="radio" id="valor1" name="valor" value="250" @if(old('valor') == 250) checked @endif>
-			    <label for="valor1">Estudantes (Graduação e Pós-Graduação): R$250,00</label>
+			    <input type="radio" id="valor4" name="valor" value="250" @if(old('valor') == 250) checked @endif>
+			    <label for="valor4">Estudantes (Graduação e Pós-Graduação): R$250,00</label>
 			  </div>
 
 			  <div class="col-12 col-lg-6 mb-2">
-			    <input type="radio" id="valor2" name="valor" value="300" @if(old('valor') == 300) checked @endif>
-			    <label for="valor2">Profissionais e outros: R$300,00</label>
+			    <input type="radio" id="valor5" name="valor" value="300" @if(old('valor') == 300) checked @endif>
+			    <label for="valor5">Profissionais e outros: R$300,00</label>
 			  </div>
 
 			  <div class="col-12 col-lg-6 mb-2">
-			    <input type="radio" id="valor3" name="valor" value="250" @if(old('valor') == 250) checked @endif>
-			    <label for="valor3">Profissionais sócios (ABENEPI, ABPp): R$250,00</label>
+			    <input type="radio" id="valor6" name="valor" value="250" @if(old('valor') == 250) checked @endif>
+			    <label for="valor6">Profissionais sócios (ABENEPI, ABPp): R$250,00</label>
 			  </div>
 
 				<div class="text-center col-12 mt-3 mb-5">
