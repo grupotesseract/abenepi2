@@ -18,3 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/admin', 'AdminController@index');
+
+Route::resource('inscritos', 'InscritoController');
+
+Route::resource('inscritos', 'InscritoController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Route::post('inscricao', 'InscritoController@inscricao');

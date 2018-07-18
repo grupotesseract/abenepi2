@@ -9,11 +9,11 @@ class PagSeguroModel extends Model
 {
     public static function confirmaPagamento($inscrito)
     {
-        /*$data = [
+        $data = [
             'items' => [
                 [
                     'id' => $inscrito->id,
-                    'description' => $inscrito->descricao,
+                    'description' => 'IX CONGRESSO PAULISTA DA ABENEPI',
                     'quantity' => '1',
                     'amount' => $inscrito->valor
                 ],
@@ -42,11 +42,11 @@ class PagSeguroModel extends Model
                     ]
                 ],
                 'phone' => $inscrito->telefone,
-                'bornDate' => $inscrito->nascimento,
+                'bornDate' => date("Y-m-d", strtotime($inscrito->nascimento)),
             ]
-        ];*/
+        ];
 
-        $data = [
+        /*$data = [
             'items' => [
                 [
                     'id' => '18',
@@ -80,7 +80,7 @@ class PagSeguroModel extends Model
                 'phone' => '11985445522',
                 'bornDate' => '1988-03-21',
             ]
-        ];
+        ];*/
 
         $checkout = PagSeguro::checkout()->createFromArray($data);
         $credentials = PagSeguro::credentials()->get();
