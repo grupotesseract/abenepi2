@@ -172,6 +172,13 @@
 				<p>Prêmio Maria Valeriana Leme de Moura Ribeiro</p>
 				<p>Prêmio Sylvia Maria Ciasca</p>
 			</div>
-		</div>
-	</div>
+
+        </div>
+    </div>
+
+    <div class="text-center col-12 mt-3 mb-5">
+        <a href="https://drive.google.com/file/d/0ByHImjXbPN_eUmp4Ny03aTJ1OFpEdTdWWWFyeFZkTHJ1X2sw/view?usp=sharing" target="_blank">
+            <button type="button" class="btn btn-primary"><i class="fas fa-arrow-circle-down"></i> Currículum Palestrantes</button>
+        </a>
+    </div>
 </div>

@@ -143,17 +143,17 @@
 				</div>
 
 				<div class="col-12 col-lg-6 mb-3">
-			    <input type="radio" id="valor1" name="valor" value="250" @if(old('valor') == 250) checked @endif>
+			    <input type="radio" onclick='$(".data_inscrito").hide();' id="valor1" name="valor" value="250" @if(old('valor') == 250) checked @endif>
 			    <label for="valor1">Estudantes (Graduação e Pós-Graduação): R$250,00</label>
 			  </div>
 
 			  <div class="col-12 col-lg-6 mb-3">
-			    <input type="radio" id="valor2" name="valor" value="300" @if(old('valor') == 300) checked @endif>
+			    <input type="radio" onclick='$(".data_inscrito").hide();'id="valor2" name="valor" value="300" @if(old('valor') == 300) checked @endif>
 			    <label for="valor2">Profissionais e outros: R$300,00</label>
 			  </div>
 
 			  <div class="col-12 col-lg-6 mb-3">
-			    <input type="radio" id="valor3" name="valor" value="250" @if(old('valor') == 250) checked @endif>
+			    <input type="radio" onclick='$(".data_inscrito").hide();'id="valor3" name="valor" value="250" @if(old('valor') == 250) checked @endif>
 			    <label for="valor3">Profissionais sócios (ABENEPI, ABPp): R$250,00</label>
 			  </div>
 
@@ -162,23 +162,40 @@
                 </div>
 
                 <div class="col-12 col-lg-6 mb-3">
-                <input type="radio" id="valor4" name="valor" value="245" @if(old('valor') == 245) checked @endif>
+                <input type="radio" onclick='$(".data_inscrito").show();'id="valor4" name="valor" value="245" @if(old('valor') == 245) checked @endif>
                 <label for="valor4">Estudantes (Graduação e Pós-Graduação): R$245,00</label>
               </div>
 
               <div class="col-12 col-lg-6 mb-3">
-                <input type="radio" id="valor5" name="valor" value="280" @if(old('valor') == 280) checked @endif>
+                <input type="radio" onclick='$(".data_inscrito").show();'id="valor5" name="valor" value="280" @if(old('valor') == 280) checked @endif>
                 <label for="valor5">Profissionais e outros: R$280,00</label>
               </div>
 
               <div class="col-12 col-lg-6 mb-3">
-                <input type="radio" id="valor6" name="valor" value="245" @if(old('valor') == 245) checked @endif>
+                <input type="radio" onclick='$(".data_inscrito").show();'id="valor6" name="valor" value="245" @if(old('valor') == 245) checked @endif>
                 <label for="valor6">Profissionais sócios (ABENEPI, ABPp): R$245,00</label>
               </div>
 
-				<div class="text-center col-12 mt-3 mb-5">
-					<button type="submit" class="btn btn-default">Inscrever-se</button>
-				</div>
+              <div class="data_inscrito">
+                  <div class="col-12 mt-4 mb-4">
+                        <h5>Selecione qual data você comparecerá ao evento:</h5>
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-3">
+                    <input type="radio" id="dia_inscrito1" name="dia_inscrito" value="28 de Setembro" @if(old('dia_inscrito') == '28 de Setembro') checked @endif>
+                    <label for="dia_inscrito1">28 de Setembro</label>
+                  </div>
+
+                  <div class="col-12 col-lg-6 mb-3">
+                    <input type="radio" id="dia_inscrito2" name="dia_inscrito" value="29 de Setembro" @if(old('dia_inscrito') == '29 de Setembro') checked @endif>
+                    <label for="dia_inscrito2">29 de Setembro</label>
+                  </div>
+              </div>
+
+
+    			<div class="text-center col-12 mt-3 mb-5">
+    				<button type="submit" class="btn btn-default">Inscrever-se</button>
+    			</div>
 			</div>{{-- End Row --}}
 		</div>{{-- End Form-Group --}}
 	</form>

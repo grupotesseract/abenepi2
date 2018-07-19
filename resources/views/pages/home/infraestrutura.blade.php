@@ -12,10 +12,14 @@
 			<p><span>Telefone: </span>(16) 3363-0200</p>
 
 			<a href="https://drive.google.com/open?id=1yvlvvhe2VqQQr-qTyIewgB9J4Yhgz9AK" target="_blank">
-				<button type="button" class="btn btn-primary"><i class="fas fa-arrow-circle-down"></i> Hotéis, Táxis e Restaurantes</button>				
+				<button type="button" class="btn btn-primary"><i class="fas fa-arrow-circle-down"></i> Hotéis, Táxis e Restaurantes</button>
 			</a>
+
+            <a href="https://drive.google.com/file/d/1bLvt2zwyY2dDVcZzmrDXRZb7rOvLkoUd/view?usp=sharing" target="_blank">
+                <button type="button" class="btn btn-primary"><i class="fas fa-arrow-circle-down"></i> Envios de Trabalhos, Comissão Organizadora e demais Informações</button>
+            </a>
 		</div>
-	</div>	
+	</div>
 </div>
 
 <script>

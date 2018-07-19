@@ -32,6 +32,7 @@ class CreateInscritosTable extends Migration
             $table->string('telefone');
             $table->string('nascimento');
             $table->decimal('valor',10,2);
+            $table->string('dia_inscrito')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

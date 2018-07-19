@@ -52,7 +52,8 @@ class Inscrito extends Model
         'estado',
         'valor',
         'telefone',
-        'nascimento'
+        'nascimento',
+        'dia_inscrito'
     ];
 
     /**
@@ -77,7 +78,8 @@ class Inscrito extends Model
         'estado' => 'string',
         'valor' => 'float',
         'telefone' => 'string',
-        'nascimento' => 'string'
+        'nascimento' => 'string',
+        'dia_inscrito' => 'string'
     ];
 
     /**
