@@ -140,17 +140,17 @@
 					<h5>Selecione uma das opções abaixo:</h5>
 				</div>
 
-				<div class="col-12 col-lg-6 mb-2">
+				<div class="col-12 col-lg-6 mb-3">
 			    <input type="radio" id="valor1" name="valor" value="250" @if(old('valor') == 250) checked @endif>
 			    <label for="valor1">Estudantes (Graduação e Pós-Graduação): R$250,00</label>
 			  </div>
 
-			  <div class="col-12 col-lg-6 mb-2">
+			  <div class="col-12 col-lg-6 mb-3">
 			    <input type="radio" id="valor2" name="valor" value="300" @if(old('valor') == 300) checked @endif>
 			    <label for="valor2">Profissionais e outros: R$300,00</label>
 			  </div>
 
-			  <div class="col-12 col-lg-6 mb-2">
+			  <div class="col-12 col-lg-6 mb-3">
 			    <input type="radio" id="valor3" name="valor" value="250" @if(old('valor') == 250) checked @endif>
 			    <label for="valor3">Profissionais sócios (ABENEPI, ABPp): R$250,00</label>
 			  </div>
@@ -196,12 +196,12 @@
                 <label for="valor4">Estudantes (Graduação e Pós-Graduação): R$250,00</label>
               </div>
 
-              <div class="col-12 col-lg-6 mb-2">
+              <div class="col-12 col-lg-6 mb-3">
                 <input type="radio" id="valor5" name="valor" value="300" @if(old('valor') == 300) checked @endif>
                 <label for="valor5">Profissionais e outros: R$300,00</label>
               </div>
 
-              <div class="col-12 col-lg-6 mb-2">
+              <div class="col-12 col-lg-6 mb-3">
                 <input type="radio" id="valor6" name="valor" value="250" @if(old('valor') == 250) checked @endif>
                 <label for="valor6">Profissionais sócios (ABENEPI, ABPp): R$250,00</label>
               </div>
