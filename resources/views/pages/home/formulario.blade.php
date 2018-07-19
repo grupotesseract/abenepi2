@@ -34,14 +34,16 @@
 		<div class="col-12 col-lg-6">
 			<h5>Inscrição para 1 dia de evento:</h5>
 			<ul class="mb-4">
-				<li>Estudantes (Graduação e Pós-Graduação): R$210,00</li>
-				<li>Profissionais: R$245,00</li>
-				<li>Profissionais sócios (ABENEPI, ABPp): R$210,00</li>
+				<li>Estudantes (Graduação e Pós-Graduação): R$245,00</li>
+				<li>Profissionais: R$280,00</li>
+				<li>Profissionais sócios (ABENEPI, ABPp): R$245,00</li>
 			</ul>
 		</div>
 	</div>
 
 	<p><span>Obs:</span> O Núcleo São Carlos da Abenepi reserva-se ao direito de aceitar somente as inscrições realizadas dentro do prazo e de encerrar as inscrições assim que todas as vagas forem preenchidas.</p>
+
+    <p>Em caso de dúvidas, entrar em contato com <span>saocarlosabenepi@gmail.com</span></p>
 
 	<form action="{{url('/inscricao')}}" method="post">
 		@csrf
@@ -137,7 +139,7 @@
 				</div>
 
 				<div class="col-12 mt-4 mb-4">
-					<h5>Selecione uma das opções abaixo:</h5>
+					<h5>Selecione uma das opções abaixo (Para 2 dias de evento):</h5>
 				</div>
 
 				<div class="col-12 col-lg-6 mb-3">
@@ -154,6 +156,25 @@
 			    <input type="radio" id="valor3" name="valor" value="250" @if(old('valor') == 250) checked @endif>
 			    <label for="valor3">Profissionais sócios (ABENEPI, ABPp): R$250,00</label>
 			  </div>
+
+              <div class="col-12 mt-4 mb-4">
+                    <h5>Selecione uma das opções abaixo (Para 1 dia de evento):</h5>
+                </div>
+
+                <div class="col-12 col-lg-6 mb-3">
+                <input type="radio" id="valor4" name="valor" value="245" @if(old('valor') == 245) checked @endif>
+                <label for="valor4">Estudantes (Graduação e Pós-Graduação): R$245,00</label>
+              </div>
+
+              <div class="col-12 col-lg-6 mb-3">
+                <input type="radio" id="valor5" name="valor" value="280" @if(old('valor') == 280) checked @endif>
+                <label for="valor5">Profissionais e outros: R$280,00</label>
+              </div>
+
+              <div class="col-12 col-lg-6 mb-3">
+                <input type="radio" id="valor6" name="valor" value="245" @if(old('valor') == 245) checked @endif>
+                <label for="valor6">Profissionais sócios (ABENEPI, ABPp): R$245,00</label>
+              </div>
 
 				<div class="text-center col-12 mt-3 mb-5">
 					<button type="submit" class="btn btn-default">Inscrever-se</button>

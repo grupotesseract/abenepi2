@@ -19,8 +19,8 @@
 
     	<div class="palestra">
 	    	<h2>9:15 às 10:30</h2>
-	    	<h5>Palestra 1: Promoção das funções executivas em casa e na escola</h5>
-	    	<p>Dra. Alessandra G. Seabra</p> 
+	    	<h5>Palestra 1: Saúde mental na infância e adolescência</h5>
+	    	<p>Dr. Ricardo N. Krause</p>
     	</div>
 
     	<div class="palestra">
@@ -33,8 +33,11 @@
 	    	<h5>Mesa redonda 1 - Conhecendo os principais transtornos da infância</h5>
 	    	<p>Coordenadora: Dra. Sônia das Dores Rodrigues</p>
 	    	<h5>Transtorno do Déficit de Atenção e Hiperatividade (TDAH)</h5>
-	    	<p>Dr. Gustavo Nogueira Lima</p>
-	    	<h5>Transtorno do espectro autista (TEA)</h5>
+            <p>Dra. Eduarda Raquel Almeida Batista</p>
+            <h5>Transtorno do espectro autista (TEA)</h5>
+	    	<p>Dr. Silvyo David Araújo Giffoni </p>
+            <h5>Transtornos específicos de aprendizagem</h5>
+            <p>Dra. Patrícia de Abreu Pinheiro Crenitte</p>
     	</div>
 
     	<div class="palestra">
@@ -44,12 +47,18 @@
     </div>
 
     <div class="col-12 col-lg-6">
+        <div class="palestra">
+            <h2>14:00 às 15:00</h2>
+            <h5>Palestra 2 - Promoção das funções executivas em casa e na escola</h5>
+            <p>Dra. Alessandra G. Seabra</p>
+        </div>
+
     	<div class="palestra">
-    		<h2>14:00 às 15:30</h2>
+    		<h2>15:00 às 16:30</h2>
     		<h5>Mesa redonda 2 - Intervenções no TDAH</h5>
     		<p>Coordenadora: Dra. Anna Paola Chiarelli</p>
     		<h5>Estimulação cognitiva da atenção e funções executivas</h5>
-    		<p>Dr. Tiago Rivero</p>
+    		<p>Dr. Thiago Rivero</p>
     		<h5>Orientação parental</h5>
     		<p>Dra. Márcia Maria Toledo</p>
     		<h5>Intervenção psicomotora</h5>
@@ -57,18 +66,12 @@
     	</div>
 
     	<div class="palestra">
-    		<h2>15:30 às 16:00</h2>
+    		<h2>16:30 às 17:00</h2>
     		<h5>Coffee break</h5>
     	</div>
 
     	<div class="palestra">
-    		<h2>16:00 às 16:45</h2>
-    		<h5>Conferência: Acidente Vascular Cerebral (AVC) na infância</h5>
-    		<p>Dra. Maria Valeriana Leme de Moura Ribeiro</p>
-    	</div>
-
-    	<div class="palestra">
-    		<h2>16:45 às 18:15</h2>
+    		<h2>17:00 às 18:30</h2>
     		<h5>Mesa redonda 3 - O planejamento terapêutico da criança autista</h5>
     		<p>Coordenador: Dr. Silvyo Giffoni</p>
     		<h5>Intervenção fonoaudiológica</h5>
@@ -86,6 +89,12 @@
 
 	<div class="row">
 		<div class="col-12 col-lg-6">
+
+            <div class="palestra">
+                <h2>8:00</h2>
+                <h5>Colocação dos pôsteres</h5>
+            </div>
+
 			<div class="palestra">
 				<h2>8:00 às 9:30</h2>
 				<h5>Mesa redonda 4 – Intervenções na dislexia do desenvolvimento</h5>
@@ -110,7 +119,7 @@
 
 			<div class="palestra">
 				<h2>10:00 às 10:30</h2>
-				<h5>Palestra 2 – Atualizações sobre o tratamento farmacológico de indivíduos com TDAH</h5>
+				<h5>Palestra 3 – Atualizações sobre o tratamento farmacológico de indivíduos com TDAH</h5>
 				<p>Dr. Marco Romano</p>
 			</div>
 
@@ -123,26 +132,28 @@
 				<h5>Classificação Internacional de Funcionalidade (CIF)</h5>
 				<p>Maria Cristina Biz</p>
 				<h5>Intervenção psicológica</h5>
-				<p>Carolina Araújo Rabelo</p>
+				<p>Ms. Carolina Araújo Rabelo</p>
 			</div>
 		</div>
 
 		<div class="col-12 col-lg-6">
 			<div class="palestra">
-				<h2>12:30 às 13:30</h2>
+				<h2>12:00 às 13:30</h2>
 				<h5>Intervalo para almoço</h5>
 			</div>
 
 			<div class="palestra">
 				<h2>13:30 às 14:30</h2>
-				<h5>Palestra 3: Saúde mental na infância e adolescência</h5>
-				<p>Conferencista: Dr. Ricardo N. Krause</p>
-			</div>
+				<h5>Conferência: Acidente Vascular Cerebral (AVC) na infância: aspectos da evolução</h5>
+                <p>Dra. Maria Valeriana Leme de Moura Ribeiro</p>
+            </div>
 
-			<div class="palestra">
-				<h2>14:30 às 15:30</h2>
-				<h5>Palestra 4 – Treinamento de habilidades sociais na infância e adolescência</h5>
-			</div>
+            <div class="palestra">
+                <h2>14:30 às 15:30</h2>
+                <h5>Palestra 4 – Treinamento de habilidades sociais na infância e adolescência</h5>
+                <p>Dra. Zilda A. P. Del Prette</p>
+				<p>Dr. Almir Del Prette</p>
+            </div>
 
 			<div class="palestra">
 				<h2>15:30 às 16:00</h2>

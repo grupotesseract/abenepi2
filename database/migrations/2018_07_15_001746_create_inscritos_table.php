@@ -21,7 +21,7 @@ class CreateInscritosTable extends Migration
             $table->string('endereco', 1000);
             $table->string('bairro');
             $table->string('numero');
-            $table->string('complemento');
+            $table->string('complemento')->nullable();
             $table->text('cep');
             $table->string('email');
             $table->string('senha');
