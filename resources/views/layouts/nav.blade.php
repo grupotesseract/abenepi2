@@ -10,7 +10,13 @@
           <a class="nav-link smooth-scroll" href="#home">Home</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link smooth-scroll" href="#apresentacao">Apresentação</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link smooth-scroll" href="#programacao">Programação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link smooth-scroll" href="#enviotrabalhos">Envio de Trabalhos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link smooth-scroll" href="#formulario">Inscrições</a>
@@ -19,7 +25,7 @@
         <li class="nav-item">
           <a class="nav-link smooth-scroll" href="#">Certificados</a>
         </li>
-        --}}        
+        --}}
         <li class="nav-item">
           <a class="nav-link smooth-scroll" href="#infraestrutura">Infraestrutura</a>
         </li>

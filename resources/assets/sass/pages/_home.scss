@@ -31,7 +31,7 @@ header {
     }
 
     @include media-breakpoint-down(md)  {
-      width: 100%;      
+      width: 100%;
       h1 {
         display: none;
       }
@@ -44,7 +44,7 @@ header {
       margin: 5rem auto;
       img {
         display: none;
-      }      
+      }
       @include media-breakpoint-down(md)  {
         img {
           display: block;
@@ -64,7 +64,7 @@ header {
 
           &:last-child {
             font-size: 1.3rem;
-          }          
+          }
         }
       }
 
@@ -79,6 +79,48 @@ header {
 }
 
 .programacao {
+  padding-top: 4rem;
+  //padding-bottom: 2rem;
+
+  h1, h2, h3 {
+    color: $primary;
+  }
+
+  .palestra {
+    padding-left: 2rem;
+    border-left: 2px solid $primary;
+    margin-bottom: 3rem;
+    h2 {
+      font-family: $font-horario;
+    }
+    p {
+      color: $primary;
+    }
+  }
+}
+
+.apresentacao {
+  padding-top: 4rem;
+  //padding-bottom: 2rem;
+
+  h1, h2, h3 {
+    color: $primary;
+  }
+
+  .palestra {
+    padding-left: 2rem;
+    border-left: 2px solid $primary;
+    margin-bottom: 3rem;
+    h2 {
+      font-family: $font-horario;
+    }
+    p {
+      color: $primary;
+    }
+  }
+}
+
+.enviotrabalhos {
   padding-top: 4rem;
   //padding-bottom: 2rem;
 
@@ -141,7 +183,7 @@ header {
   	background-color: $primary;
   	color: white;
   }
-  
+
   [type="radio"]:checked,
   [type="radio"]:not(:checked) {
       position: absolute;
@@ -152,7 +194,7 @@ header {
   {
       position: relative;
       padding-left: 32px;
-      @include media-breakpoint-up(lg) { padding-top: 4px }      
+      @include media-breakpoint-up(lg) { padding-top: 4px }
       cursor: pointer;
       line-height: 20px;
       display: inline-block;
@@ -196,7 +238,7 @@ header {
     color: $primary;
   }
 
-  @include media-breakpoint-down(md) { 
+  @include media-breakpoint-down(md) {
     p {
       &:first-child {
         margin-top: 1rem;

@@ -1,4 +1,4 @@
-<div class="container programacao" id="programacao">
+<div class="container apresentacao" id="apresentacao">
 	<h1 class="text-center">Apresentação</h1>
     <p class="mb-4">Os transtornos do neurodesenvolvimento representam um grupo de condições que se manifestam nas fases iniciais do desenvolvimento de um indivíduo e podem acarretar, no geral, prejuízos no funcionamento cognitivo, social e acadêmico. Os processo de avaliação e intervenção requerem a atuação de uma equipe multidisciplinar, bem como o engajamento dos educadores e familiares.
     O presente congresso terá como objetivo, discutir as questões pertinentes aos diferentes tipos de intervenções destinadas à criança e ao adolescente  com transtornos específicos de aprendizagem, transtorno do déficit de atenção e hiperatividade, transtorno do espectro autista e deficiência intelectual.
