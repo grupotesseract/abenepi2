@@ -1,0 +1,269 @@
+// Home -> Regras específicas da Home.
+
+// Header
+header {
+	background-image: url("https://res.cloudinary.com/tesseract/image/upload/f_auto,q_auto/v1531876306/abenepi2/bg-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding-top: 61px;
+
+  .logo-header {
+    display: flex;
+
+    img {
+      width: 100%;
+      margin: auto;
+      @include media-breakpoint-down(md)  {
+        display: none;
+      }
+    }
+  }
+
+  .box-header {
+    color: white;
+    p {
+      font-size: 1.5rem;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+
+    @include media-breakpoint-down(md)  {
+      width: 100%;
+      h1 {
+        display: none;
+      }
+    }
+
+    div {
+      width: 80%;
+      background-color: rgba($primary, .8);
+      padding: 3rem 0;
+      margin: 5rem auto;
+      img {
+        display: none;
+      }
+      @include media-breakpoint-down(md)  {
+        img {
+          display: block;
+          width: 100%;
+          padding: 0 2rem;
+        }
+        margin: 3rem 0;
+      }
+      text-align: center;
+
+      @include media-breakpoint-down(md)  {
+        width: 100%;
+        p {
+          &:nth-child(2) {
+            display: none;
+          }
+
+          &:last-child {
+            font-size: 1.3rem;
+          }
+        }
+      }
+
+      .linha-header {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+        border-top: 1px solid white;
+      }
+    }
+  }
+}
+
+.programacao {
+  padding-top: 4rem;
+  //padding-bottom: 2rem;
+
+  h1, h2, h3 {
+    color: $primary;
+  }
+
+  .palestra {
+    padding-left: 2rem;
+    border-left: 2px solid $primary;
+    margin-bottom: 3rem;
+    h2 {
+      font-family: $font-horario;
+    }
+    p {
+      color: $primary;
+    }
+  }
+}
+
+.apresentacao {
+  padding-top: 4rem;
+  //padding-bottom: 2rem;
+
+  h1, h2, h3 {
+    color: $primary;
+  }
+
+  .palestra {
+    padding-left: 2rem;
+    border-left: 2px solid $primary;
+    margin-bottom: 3rem;
+    h2 {
+      font-family: $font-horario;
+    }
+    p {
+      color: $primary;
+    }
+  }
+}
+
+.enviotrabalhos {
+  padding-top: 4rem;
+  //padding-bottom: 2rem;
+
+  h1, h2, h3 {
+    color: $primary;
+  }
+
+  .palestra {
+    padding-left: 2rem;
+    border-left: 2px solid $primary;
+    margin-bottom: 3rem;
+    h2 {
+      font-family: $font-horario;
+    }
+    p {
+      color: $primary;
+    }
+  }
+}
+
+.apoio {
+	h1 {
+    color: $primary;
+  }
+
+  .logo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    @include media-breakpoint-down(md) { display: block }
+
+    img {
+      width: 100%;
+      margin: auto;
+      @include media-breakpoint-down(md) { margin: 0 auto 2rem }
+      display: block;
+    }
+
+    .tesseract {
+      width: initial;
+      height: 150px;
+    }
+  }
+}
+
+.formulario {
+	h1, h5, span {
+    color: $primary;
+  }
+
+  ul {
+  	padding-left: 20px;
+  }
+
+  input, select {
+  	border-color: $primary;
+  }
+
+  button {
+  	background-color: $primary;
+  	color: white;
+  }
+
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+      position: absolute;
+      left: -9999px;
+  }
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label
+  {
+      position: relative;
+      padding-left: 32px;
+      @include media-breakpoint-up(lg) { padding-top: 4px }
+      cursor: pointer;
+      line-height: 20px;
+      display: inline-block;
+  }
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 26px;
+      height: 26px;
+      border: 2px solid #666;
+      border-radius: 100%;
+      background: #fff;
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background: #83232F;
+      position: absolute;
+      top: 7px;
+      left: 5px;
+      border-radius: 100%;
+      transition: all 0.2s ease;
+  }
+  [type="radio"]:not(:checked) + label:after {
+      opacity: 0;
+      transform: scale(0);
+  }
+  [type="radio"]:checked + label:after {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.infraestrutura {
+  h1 {
+    color: $primary;
+  }
+
+  @include media-breakpoint-down(md) {
+    p {
+      &:first-child {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+  }
+
+  span {
+    color: $primary;
+    font-weight: bold;
+  }
+
+  button {
+    display: block;
+    margin: 2rem auto 0;
+  }
+
+  #map {
+    height: 300px;
+    width: 100%;
+    border: 2px solid $primary;
+    border-radius: 10px;
+  }
+}
