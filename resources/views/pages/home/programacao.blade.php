@@ -120,7 +120,7 @@
 			<div class="palestra">
 				<h2>10:00 às 10:30</h2>
 				<h5>Palestra 3 – Atualizações sobre o tratamento farmacológico de indivíduos com TDAH</h5>
-				<p>Dr. Marco Romano</p>
+				<p>Dr. Marcos Romano</p>
 			</div>
 
 			<div class="palestra">
@@ -163,7 +163,7 @@
 			<div class="palestra">
 				<h2>16:00 às 17:00</h2>
 				<h5>Palestra 5 – Crianças com falta de limites: onde estamos errando?</h5>
-				<p>Ms. Iuri Capelatto</p>
+				<p>Ms. Iuri Victor Capelatto</p>
 			</div>
 
 			<div class="palestra">
@@ -178,7 +178,7 @@
 
     <div class="text-center col-12 mt-3 mb-5">
         <a href="https://drive.google.com/file/d/0ByHImjXbPN_eUmp4Ny03aTJ1OFpEdTdWWWFyeFZkTHJ1X2sw/view?usp=sharing" target="_blank">
-            <button type="button" class="btn btn-primary"><i class="fas fa-arrow-circle-down"></i> Currículum Palestrantes</button>
+            <button type="button" class="btn btn-primary"><i class="fas fa-arrow-circle-down"></i> Currículo Palestrantes</button>
         </a>
     </div>
 </div>

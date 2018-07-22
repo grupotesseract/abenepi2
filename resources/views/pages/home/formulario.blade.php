@@ -41,9 +41,9 @@
 		</div>
 	</div>
 
-	<p><span>Obs:</span> O Núcleo São Carlos da Abenepi reserva-se ao direito de aceitar somente as inscrições realizadas dentro do prazo e de encerrar as inscrições assim que todas as vagas forem preenchidas.</p>
+	<p> A Comissão Organizadora reserva-se ao direito de aceitar somente as inscrições realizadas dentro do prazo e de encerrar as inscrições assim que todas as vagas forem preenchidas. </p>
 
-    <p>Em caso de dúvidas, entrar em contato com <span>saocarlosabenepi@gmail.com</span></p>
+    <p>Em caso de dúvidas, entrar em contato com <span>abenepi.saopaulo@gmail.com</span></p>
 
 	<form action="{{url('/inscricao')}}" method="post">
 		@csrf
