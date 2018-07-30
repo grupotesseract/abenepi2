@@ -75,7 +75,7 @@
     		<h5>Mesa redonda 3 - O planejamento terapêutico da criança autista</h5>
     		<p>Coordenador: Dr. Silvyo Giffoni</p>
     		<h5>Intervenção fonoaudiológica</h5>
-    		<p>Ms. Fernanda Caroline Pinto da Silva</p>
+    		<p>Fernanda Caroline Pinto da Silva</p>
     		<h5>Adaptação curricular para o TEA</h5>
     		<p>Karen Lopes Marconato</p>
     		<h5>Análise do comportamento aplicada no TEA</h5>
@@ -130,7 +130,7 @@
 				<h5>Fatores cognitivos do transtorno intelectual</h5>
 				<p>Dra. Maria de Lourdes M. Tabaquim</p>
 				<h5>Classificação Internacional de Funcionalidade (CIF)</h5>
-				<p>Maria Cristina Biz</p>
+				<p>Ms. Maria Cristina Biz</p>
 				<h5>Intervenção psicológica</h5>
 				<p>Ms. Carolina Araújo Rabelo</p>
 			</div>

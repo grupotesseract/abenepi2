@@ -10,8 +10,11 @@
     <p class="mb-4">Os trabalhos submetidos serão encaminhados para os avaliadores da Comissão Científica sem as informações sobre a autoria e a instituição de realização do trabalho.</p>
 
     <p class="mb-4">A entrega do certificado está condicionada à apresentação do trabalho. Será conferido um certificado por trabalho exposto, contendo os nomes de todos os autores.</p>
+
+    <p class="mb-4">Data Limite para Envio: 24/08/2018</p>
+    <p class="mb-4">Respostas da seleção dos trabalhos: 07/09/2018</p>
     <div class="text-center col-12 mt-3 mb-5">
-        <a href="https://drive.google.com/file/d/1j79noDbErH_w2t-Dz-S-tj28rAlWE8zn/view?usp=sharing" target="_blank">
+        <a href="https://drive.google.com/file/d/1JeCOuo8UsQNmc-den-ahrFY0FND0y32S/view?usp=sharing" target="_blank">
             <button type="button" class="btn btn-primary"><i class="fas fa-arrow-circle-down"></i> Normas para Envio</button>
         </a>
     </div>
