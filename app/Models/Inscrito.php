@@ -88,7 +88,7 @@ class Inscrito extends Model
      * @var array
      */
     public static $rules = [
-        'cpf' => 'required',
+        'cpf' => 'required|unique:inscritos',
         'nome' => 'required',
         'profissao' => 'required',
         'endereco' => 'required',
@@ -103,6 +103,13 @@ class Inscrito extends Model
         'telefone' => 'required',
         'nascimento' => 'required'
     ];
+
+    public function setcpfAttribute($value)
+    {
+        $semTraco = str_replace('-','',$value);
+        $semPonto = str_replace('.','',$value);
+        $this->attributes['cpf'] = $semPonto;
+    }
 
 
 }
