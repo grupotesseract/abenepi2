@@ -10,6 +10,8 @@ use App\Repositories\InscritoRepository;
 use Flash;
 use App\Http\Controllers\AppBaseController;
 use Response;
+use Illuminate\Http\Request;
+
 
 use \App\PagSeguroModel as PagSeguroModel;
 
@@ -167,5 +169,19 @@ class InscritoController extends AppBaseController
         $pagSeguro = PagSeguroModel::confirmaPagamento($inscrito);
 
         return redirect($pagSeguro);
+    }
+
+    public function emissaoPagamento (Request $request)
+    {
+        $input = $request->all();
+        $inscrito = $this->inscritoRepository->findWhere(['cpf' => $input['cpf']])->first();
+
+        if ($inscrito)
+        {
+            $pagSeguro = PagSeguroModel::confirmaPagamento($inscrito);
+            return redirect($pagSeguro);
+        }
+        else
+            Flash::success('Favor, verifique seu CPF');
     }
 }

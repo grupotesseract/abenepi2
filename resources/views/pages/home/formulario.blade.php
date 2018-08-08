@@ -122,17 +122,17 @@
 
                 <div class="col-12 mb-2">
                     <label id="label_form" for="telefone" class="control-label">Telefone</label>
-                  <input type="text" class="form-control" maxlength="14" placeholder="(14)91234-5678" name="telefone" value="{{ old('telefone') }}">
+                  <input type="text" class="form-control" maxlength="14" placeholder="(14)91234-5678" name="telefone" value="{{ old('telefone') }}" required="required">
                 </div>
 
                 <div class="col-12 col-lg-6 mb-2">
                     <label id="label_form" for="inputEmail3" class="control-label">Email</label>
-                    <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="email@exemplo.com.br" value="{{ old('email') }}">
+                    <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="email@exemplo.com.br" value="{{ old('email') }}" required="required">
                 </div>
 
                 <div class="col-12 col-lg-6 mb-2">
                     <label id="label_form" for="inputPassword3" class="control-label">Senha</label>
-                  <input type="password" class="form-control" name="senha" id="inputsenha3" value="{{ old('senha') }}">
+                  <input type="password" class="form-control" name="senha" id="inputsenha3" value="{{ old('senha') }}" required="required">
                 </div>
 
                 <div class="col-12 mt-4 mb-4">
@@ -200,9 +200,9 @@
 	<p> A Comissão Organizadora reserva-se ao direito de aceitar somente as inscrições realizadas dentro do prazo e de encerrar as inscrições assim que todas as vagas forem preenchidas. </p>
 
     <p>Em caso de dúvidas, entrar em contato com <span>abenepi.saopaulo@gmail.com</span></p>
-    <!-- <h1 class="text-center mb-4">Gerar Nova Guia de Pagamento</h1>
+    <h1 class="text-center mb-4">Gerar Nova Guia de Pagamento</h1>
 
-    <form action="{{url('')}}" method="post">
+    <form action="{{url('/emissaoPagamento')}}" method="post">
         @csrf
 
         @if ($errors->any())
@@ -217,6 +217,7 @@
         @endif
 
         <div class="form-group">
+            @include('flash::message')
             <div class="row justify-content-md-center">
                 <div class="col-12 col-lg-7 mb-2">
                     <label id="label_form" for="cpf" class="control-label">Digite seu CPF abaixo pra gerar novo pagamento no PagSeguro</label>
@@ -225,29 +226,10 @@
             </div>
 
             <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h5>Selecione uma das opções abaixo:</h5>
-                </div>
-
-                <div class="col-12 col-lg-6 mb-2">
-                <input type="radio" id="valor4" name="valor" value="250" @if(old('valor') == 250) checked @endif>
-                <label for="valor4">Estudantes (Graduação e Pós-Graduação): R$250,00</label>
-              </div>
-
-              <div class="col-12 col-lg-6 mb-3">
-                <input type="radio" id="valor5" name="valor" value="300" @if(old('valor') == 300) checked @endif>
-                <label for="valor5">Profissionais e outros: R$300,00</label>
-              </div>
-
-              <div class="col-12 col-lg-6 mb-3">
-                <input type="radio" id="valor6" name="valor" value="250" @if(old('valor') == 250) checked @endif>
-                <label for="valor6">Profissionais sócios (ABENEPI, ABPp): R$250,00</label>
-              </div>
-
                 <div class="text-center col-12 mt-3 mb-5">
                     <button type="submit" class="btn btn-default">Gerar Pagamento</button>
                 </div>
             </div>{{-- End Row --}}
         </div>{{-- End Form-Group --}}
-    </form> -->
+    </form>
 </div>

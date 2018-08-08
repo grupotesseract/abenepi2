@@ -28,3 +28,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::post('inscricao', 'InscritoController@inscricao');
+Route::post('emissaoPagamento', 'InscritoController@emissaoPagamento');
