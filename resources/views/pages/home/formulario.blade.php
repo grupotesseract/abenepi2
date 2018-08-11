@@ -107,7 +107,7 @@
 
                 <div class="col-12 col-lg-3 mb-2">
                     <label id="label_form" for="cep" class="control-label">CEP</label>
-                    <input type="text" class="form-control" maxlength="8" placeholder="99999999" data-mask='00000-000' name="cep" value="{{ old('cep') }}" required="required">
+                    <input type="text" class="form-control" maxlength="8" placeholder="99999-999" data-mask='00000-000' name="cep" value="{{ old('cep') }}" required="required">
                 </div>
 
                 <div class="col-12 col-lg-6 mb-2">
