@@ -104,12 +104,12 @@ class Inscrito extends Model
         'nascimento' => 'required'
     ];
 
-    public function setcpfAttribute($value)
+    /*public function setcpfAttribute($value)
     {
         $semTraco = str_replace('-','',$value);
         $semPonto = str_replace('.','',$value);
         $this->attributes['cpf'] = $semPonto;
-    }
+    }*/
 
 
 }
