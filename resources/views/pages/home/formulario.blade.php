@@ -72,12 +72,12 @@
 
                 <div class="col-12 col-lg-3 mb-2">
                     <label id="label_form" for="cpf" class="control-label">CPF</label>
-                    <input type="text" class="form-control" placeholder="99999999999" maxlength="11" name="cpf" value="{{ old('cpf') }}" required="required">
+                    <input type="text" class="form-control" placeholder="000.000.000-00" data-mask='000.000.000-00' maxlength="11" name="cpf" value="{{ old('cpf') }}" required="required">
                 </div>
 
             <div class="col-12 col-lg-3 mb-2">
                     <label id="label_form" for="nascimento" class="control-label">Data de Nascimento</label>
-                    <input type="text" class="form-control" placeholder="dd/mm/yyyy" name="nascimento" value="{{ old('nascimento') }}" required="required">
+                    <input type="text" data-mask="00/00/0000" class="form-control" placeholder="dd/mm/yyyy" name="nascimento" value="{{ old('nascimento') }}" required="required">
             </div>
 
             <div class="col-12 col-lg-3 mb-2">
@@ -107,12 +107,41 @@
 
                 <div class="col-12 col-lg-3 mb-2">
                     <label id="label_form" for="cep" class="control-label">CEP</label>
-                    <input type="text" class="form-control" maxlength="8" placeholder="99999999" name="cep" value="{{ old('cep') }}" required="required">
+                    <input type="text" class="form-control" maxlength="8" placeholder="99999-999" data-mask='00000-000' name="cep" value="{{ old('cep') }}" required="required">
                 </div>
 
                 <div class="col-12 col-lg-6 mb-2">
                     <label id="label_form" for="estado" class="control-label">Estado</label>
-                    <input type="text" class="form-control" maxlength="2" placeholder="SP" name="estado" value="{{ old('estado') }}" required="required">
+                    <!-- <input type="text" class="form-control" maxlength="2" placeholder="SP" name="estado" value="{{ old('estado') }}" required="required"> -->
+                    {{ Form::select('estado', [
+                        'AC'=>'Acre',
+                        'AL'=>'Alagoas',
+                        'AP'=>'Amapá',
+                        'AM'=>'Amazonas',
+                        'BA'=>'Bahia',
+                        'CE'=>'Ceará',
+                        'DF'=>'Distrito Federal',
+                        'ES'=>'Espírito Santo',
+                        'GO'=>'Goiás',
+                        'MA'=>'Maranhão',
+                        'MT'=>'Mato Grosso',
+                        'MS'=>'Mato Grosso do Sul',
+                        'MG'=>'Minas Gerais',
+                        'PA'=>'Pará',
+                        'PB'=>'Paraíba',
+                        'PR'=>'Paraná',
+                        'PE'=>'Pernambuco',
+                        'PI'=>'Piauí',
+                        'RJ'=>'Rio de Janeiro',
+                        'RN'=>'Rio Grande do Norte',
+                        'RS'=>'Rio Grande do Sul',
+                        'RO'=>'Rondônia',
+                        'RR'=>'Roraima',
+                        'SC'=>'Santa Catarina',
+                        'SP'=>'São Paulo',
+                        'SE'=>'Sergipe',
+                        'TO'=>'Tocantins'], null,
+                        ['class' => 'form-control']) }}
                 </div>
 
                 <div class="col-12 col-lg-6 mb-2">
@@ -221,7 +250,7 @@
             <div class="row justify-content-md-center">
                 <div class="col-12 col-lg-7 mb-2">
                     <label id="label_form" for="cpf" class="control-label">Digite seu CPF abaixo pra gerar novo pagamento no PagSeguro</label>
-                    <input type="text" class="form-control" placeholder="99999999999" maxlength="11" name="cpf" value="{{ old('cpf') }}" required="required">
+                    <input type="text" class="form-control" placeholder="000.000.000-00" data-mask='000.000.000-00' maxlength="11" name="cpf" value="{{ old('cpf') }}" required="required">
                 </div>
             </div>
 
