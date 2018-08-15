@@ -169,18 +169,18 @@
                 </div>
 
                 <div class="col-12 col-lg-6 mb-3">
-                <input type="radio" onclick='$(".data_inscrito").hide();' id="valor1" name="valor" value="250" @if(old('valor') == 250) checked @endif>
-                <label for="valor1">Estudantes (Graduação e Pós-Graduação): R$250,00</label>
+                <input type="radio" onclick='$(".data_inscrito").hide();' id="valor1" name="valor" value="300" @if(old('valor') == 300) checked @endif>
+                <label for="valor1">Estudantes (Graduação e Pós-Graduação): R$300,00</label>
               </div>
 
               <div class="col-12 col-lg-6 mb-3">
-                <input type="radio" onclick='$(".data_inscrito").hide();'id="valor2" name="valor" value="300" @if(old('valor') == 300) checked @endif>
-                <label for="valor2">Profissionais e outros: R$300,00</label>
+                <input type="radio" onclick='$(".data_inscrito").hide();'id="valor2" name="valor" value="350" @if(old('valor') == 350) checked @endif>
+                <label for="valor2">Profissionais e outros: R$350,00</label>
               </div>
 
               <div class="col-12 col-lg-6 mb-3">
-                <input type="radio" onclick='$(".data_inscrito").hide();'id="valor3" name="valor" value="250" @if(old('valor') == 250) checked @endif>
-                <label for="valor3">Profissionais sócios (ABENEPI, ABPp): R$250,00</label>
+                <input type="radio" onclick='$(".data_inscrito").hide();'id="valor3" name="valor" value="300" @if(old('valor') == 300) checked @endif>
+                <label for="valor3">Profissionais sócios (ABENEPI, ABPp): R$300,00</label>
               </div>
 
               <div class="col-12 mt-4 mb-4">
