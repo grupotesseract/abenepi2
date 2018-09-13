@@ -1,6 +1,8 @@
 <div class="container enviotrabalhos" id="enviotrabalhos">
 	<h1 class="text-center">Envio de Trabalhos</h1>
 
+    <h1 class="text-center">ATENÇÃO - PRAZO ENCERRADO</h1>
+
     <p class="mb-4">Poderão ser inscritos trabalhos na modalidade pôster que constituirá na apresentação oral para um avaliador da Comissão Científica, no salão de exposição de pôsteres.</p>
 
     <p class="mb-4">O resumo deverá ser encaminhado para o e-mail: <span>abenepi.saopaulo@gmail.com</span></p>
