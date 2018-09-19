@@ -57,12 +57,10 @@
     		<h2>15:00 às 16:30</h2>
     		<h5>Mesa redonda 2 - Intervenções no TDAH</h5>
     		<p>Coordenadora: Dra. Anna Paola Chiarelli</p>
-    		<h5>Estimulação cognitiva da atenção e funções executivas</h5>
-    		<p>Dr. Thiago Rivero</p>
     		<h5>Orientação parental</h5>
     		<p>Dra. Márcia Maria Toledo</p>
     		<h5>Intervenção psicomotora</h5>
-    		<p>Ms. Mariana Coelho Carvalho Fernandes</p>
+    		<p>Mariana Chaguri</p>
     	</div>
 
     	<div class="palestra">
