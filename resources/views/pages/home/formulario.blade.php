@@ -226,8 +226,8 @@
         </div>{{-- End Form-Group --}}
     </form> -->
 
-	<p> Inscrições pelo site encerradas </p>
-    <p> Inscrições disponível somente no dia do evento </p>
+	<h5> Inscrições pelo site encerradas </h5>
+    <h5> Inscrições disponível somente no dia do evento </h5>
 
     <p> A Comissão Organizadora reserva-se ao direito de aceitar somente as inscrições realizadas dentro do prazo e de encerrar as inscrições assim que todas as vagas forem preenchidas. </p>
 
