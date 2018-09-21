@@ -42,7 +42,7 @@
 	</div>
 
 
-    <form action="{{url('/inscricao')}}" method="post">
+    <!-- <form action="{{url('/inscricao')}}" method="post">
         @csrf
         <input type="hidden" name="compareceu" value="false">
         <input type="hidden" name="pagou" value="false">
@@ -112,7 +112,7 @@
 
                 <div class="col-12 col-lg-6 mb-2">
                     <label id="label_form" for="estado" class="control-label">Estado</label>
-                    <!-- <input type="text" class="form-control" maxlength="2" placeholder="SP" name="estado" value="{{ old('estado') }}" required="required"> -->
+                    <input type="text" class="form-control" maxlength="2" placeholder="SP" name="estado" value="{{ old('estado') }}" required="required">
                     {{ Form::select('estado', [
                         'AC'=>'Acre',
                         'AL'=>'Alagoas',
@@ -224,9 +224,12 @@
                 </div>
             </div>{{-- End Row --}}
         </div>{{-- End Form-Group --}}
-    </form>
+    </form> -->
 
-	<p> A Comissão Organizadora reserva-se ao direito de aceitar somente as inscrições realizadas dentro do prazo e de encerrar as inscrições assim que todas as vagas forem preenchidas. </p>
+	<p> Inscrições pelo site encerradas </p>
+    <p> Inscrições disponível somente no dia do evento </p>
+
+    <p> A Comissão Organizadora reserva-se ao direito de aceitar somente as inscrições realizadas dentro do prazo e de encerrar as inscrições assim que todas as vagas forem preenchidas. </p>
 
     <p>Em caso de dúvidas, entrar em contato com <span>abenepi.saopaulo@gmail.com</span></p>
     <h1 class="text-center mb-4">Gerar Nova Guia de Pagamento</h1>
